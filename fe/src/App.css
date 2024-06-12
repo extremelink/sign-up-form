@@ -80,6 +80,24 @@ footer{
   border:2px solid black;
 }
 
+.list-property-img-input{
+  display:block;
+  margin-top:10px;
+  margin-bottom:20px;
+}
+
+.list-property-gallery{
+  margin-top: 10px;
+  display: flex;
+  gap: 4px;
+  overflow-x:auto;
+}
+.list-property-gallery-img{
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 12px;
+
+}
 
 
 

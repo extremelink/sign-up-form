@@ -2,6 +2,7 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import snackbar from "../utility/snackbar";
+import { validateLoggedInUser } from "../utility/protectRoutes";
 
 // const myHeaders = new Headers();
 // myHeaders.append("Content-Type", "application/json");
@@ -14,6 +15,7 @@ import snackbar from "../utility/snackbar";
 // //   };
 
 const Signup=()=>{
+    validateLoggedInUser();
     const [name,setName]= useState('')
     const [phone,setPhone]= useState('')
     const [email,setEmail]=useState('')
